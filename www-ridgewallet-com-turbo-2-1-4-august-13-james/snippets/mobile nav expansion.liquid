@@ -1,0 +1,16 @@
+{{ '//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js' | script_tag }}
+<script>
+ 
+  (function($) {
+     
+     $(document).on('ready page:load page:change', function() {
+      
+        $('.order-summary-toggle').removeClass('order-summary-toggle--show').addClass('order-summary-toggle--hide');
+        $('.order-summary').removeClass('order-summary--is-collapsed').addClass('order-summary--is-expanded');
+   
+    });
+    
+  })(jQuery);
+ 
+ </script>
+

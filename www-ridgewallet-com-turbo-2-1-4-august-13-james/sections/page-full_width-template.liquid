@@ -1,0 +1,27 @@
+
+    <div>
+      {% include 'page-multi-column', content: page.content %}
+    </div>
+
+{% schema %}
+
+{
+  "name": "Banner",
+  "class": "banner-template-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Banner image",
+      "info": "1600 x 600px recommended"
+    },
+    {
+      "type": "checkbox",
+      "id": "image_darken",
+      "label": "Darken banner image",
+      "default": false
+    }
+  ]
+}
+
+{% endschema %}
