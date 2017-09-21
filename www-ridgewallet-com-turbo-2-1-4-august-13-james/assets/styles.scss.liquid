@@ -3117,6 +3117,10 @@ input.contact_email[type="email"] {
     padding: 20px;
     width: 100% !important;
     position: relative;
+    @include respond-to('medium'){
+      padding: 20px;
+      width: 100% !important;
+      position: relative;
   }
   input.contact_email[type="email"] {
     width: 65%;
@@ -3130,8 +3134,12 @@ input.contact_email[type="email"] {
     margin-left: 8px;
     float: left;
     @include respond-to('medium'){
+      padding: 20px;
+      width: 100% !important;
+      position: relative;
+    @include respond-to('medium'){
       margin-left: 0;
-      width: 100%;
+      width: 55%;
     }
   }
 }
@@ -3215,7 +3223,7 @@ input.contact_email[type="email"] {
 
 .newsletter_section {
   -webkit-transform:translate3d(0,0,0);
-  
+
   /*
   background-color: {{ settings.newsletter_section_background_color }};
   color: {{ settings.newsletter_section_color }};
@@ -6927,7 +6935,7 @@ form.search_form, .search_form input {
 
 .header_search_form .search-submit {
   top: 38px;
-  font-size: 30px;
+  font-size: 30px;etetstset
   @include respond-to('small'){
     top: 42px;
     font-size: 20px;
@@ -8882,17 +8890,17 @@ $delay: 0;
       	border-bottom: 1px solid #222;
     }
 }
-  
+
     @media only screen and (min-width: 769px) and (max-width: 1199px) {
         input.contact_email[type="email"] {
         width: 42%;
 	}
-}				
+}
       @media only screen and (min-width: 769px) and (max-width: 959px) {
         #contact_form input.sign_up[type="submit"] {
           width: 20%;
         }
-        
+
         input.contact_email[type="email"] {
         width: 31%;
 	}
@@ -8903,54 +8911,56 @@ $delay: 0;
     display: inline;
     text-align: none;
 }
-  
+
   html {
     overflow-x: hidden;
   }
-  
+
   @media only screen and (max-width: 768px) {
     .newsletter_section .newsletter-text p {
     width: 100%;
   }
 }
-  
+
     @media only screen and (min-width: 769px) {
     .newsletter_section .newsletter-text p {
     text-align: left;
   }
     .newsletter-edit {
     margin-left: 18px !important;
-  }    
+  }
 }
       @media only screen and (min-width: 769px) and (max-width: 1199px) {
     .newsletter-edit {
     margin-left: 28px !important;
-  }    
+  }
 }
         @media only screen and (min-width: 769px) and (max-width: 959px) {
     .newsletter-edit {
     margin-left: 18px !important;
-  }    
+  }
 }
-  
+
 @media (max-width: 768px) {
 .caption .headline, .caption .subtitle {
     text-shadow: 2px 1px 4px #000;
   }
-} 
+}
  @media (max-width: 500px)
   {
     .homepage-video #video {
       display: none!important;
-    }
-    .homepage-video { 
+    }testng the change
+    .homepage-video {
     background-image: url(http://cdn.shopify.com/s/files/1/0613/6213/t/78/assets/gif-home-page.gif) ;
       background-position: center center;
       background-repeat:  no-repeat;
       background-size:  cover;
       background-color: #999;
       height: 250px;
+      background-repeat:  no-repeat;
+      background-size:  cover;
+      background-color: #999;
+      height: 250px;
 		}
   }
-  
-  
